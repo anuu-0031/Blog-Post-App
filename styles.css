@@ -1,0 +1,202 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family:  Serif; /* Import Google Font */
+    background-color: #f4f7fa; /* Light background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: #4a90e2; /* Primary Blue Color */
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Create Post Section */
+.create-post-section {
+    font-family:"Times New Roman", Times, serif;
+    margin-bottom: 40px;
+    background-color: #e9f5ff; /* Light Blue Background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.create-post-section h2 {
+    color:#666;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+#createPostForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#createPostForm input,
+#createPostForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+#createPostForm input:focus,
+#createPostForm textarea:focus {
+    border-color: #4a90e2; /* Highlight on focus */
+    outline: none;
+}
+
+#createPostForm button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#createPostForm button:hover {
+    background-color: #357ab8; /* Darker Blue on Hover */
+}
+
+/* Posts Section */
+.posts-section {
+    background-color: #FFF7FC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.posts-section h2 {
+    color: #508dd4;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    background-color:#BBE9FF;
+    text-align: center;
+    
+}
+#posts-section h2.outset {
+    border-style: outset;
+}
+
+
+#postsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+/* Individual Post */
+.posts-item {
+    background-color: #4c6175; /* Light Background */
+    border-left: 5px solid #4a90e2; /* Accent Border */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-item-content {
+    max-width: 80%;
+}
+.posttitle {
+    background: #594b4b;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px !important;
+    margin-bottom: -6px;
+  }
+
+  .post h3 {
+    margin-top: 0;
+  }
+  
+
+.posts-item p {
+    color: #BBE9FF;
+    font-size: 1em;
+    margin: 5px 0;
+    
+}
+
+
+.timestamp {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 5px;
+  }
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+
+.delete-btn:hover {
+    background-color: #c9302c;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #postsContainer {
+        gap: 15px;
+    }
+
+    .post-item-content {
+        max-width: 100%;
+    }
+}
